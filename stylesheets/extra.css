@@ -1,0 +1,15 @@
+/* 針對全站或特定內容容器設置豎排 */
+.ancient-text {
+  writing-mode: vertical-rl;
+  white-space: pre-wrap;
+  line-height: 2.5;
+  /* 模擬古籍格線 */
+  background-image: linear-gradient(to left, #ccc 1px, transparent 1px);
+  background-size: 2.5em 100%; /* 寬度需與 line-height 對應 */
+}
+  
+  /* 修正標題與段落的邊距，避免豎排時位移 */
+  .md-content h1, .md-content h2, .md-content p {
+    margin-left: 20px;
+    margin-right: 0;
+  }
